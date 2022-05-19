@@ -20,30 +20,117 @@ body{
 }
 
 .loginbox__title{
+    position: absolute;
+    top: 40px;
+    bottom: 635px;
+    left: 50px;
+    right: 50px;
     color: white;
     text-align: center;
     font-size: 20px;
-    padding-top: 40px;
 }
 
 .loginbox__text{
-    position: relative;
-    bottom: 20px;
+    position: absolute;
+    top: 75px;
+    bottom: 599px;
+    left: 50px;
+    right: 50px;
     color: white;
     text-align: center;
     font-size: 15px;
     padding-top: 8px;
 }
 
-.loginbox__input{
-    position: relative;
+.loginbox__input--email{
+    position: absolute;
+    top: 135px;
+    bottom: 520px;
     left: 50px;
+    right: 50px;
     width: 362px;
     height: 47px;
     border-radius: 4px;
-    padding-bottom: 16px;
+}
+
+.loginbox__input--password{
+    position: absolute;
+    top: 198px;
+    bottom: 457px;
+    left: 50px;
+    right: 50px;
+    width: 362px;
+    height: 47px;
     border-radius: 4px;
-    
+}
+
+.loginbox__checkbox{
+    position: absolute;
+    top: 258px;
+    bottom: 424px;
+    left: 50px;
+    right: 392px;
+    border: 1.5px solid #FFFFFF;
+}
+
+.loginbox__rememberme{
+    position: absolute;
+    font-size: 14px;
+    top: 244px;
+    bottom: 424px;
+    left: 86px;
+    right: 275.36px; 
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.loginbox__forgot{
+    position: absolute;
+    font-size: 14px;
+    top: 258px;
+    bottom: 424px;
+    left: 292px;
+    right: 49.65px; 
+    color: #5FE19B;
+    align-items: center;
+}
+
+.loginbox__login{
+    position: absolute;
+    height: 47px;
+    width: 362px;
+    border-radius: 6px;
+    top: 302px;
+    bottom: 353px;
+    left: 50px;
+    right: 50px; 
+    color: #FFFFFF;
+    background: #4CC986;
+
+    align-items: center;
+    font-size: 18px;
+}
+
+.loginbox__registered{
+    position: absolute;
+    font-size: 14px;
+    top: 381px;
+    bottom: 302px;
+    left: 120px;
+    right: 213.35px; 
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.loginbox__register{
+    position: absolute;
+    font-size: 14px;
+    top: 396px;
+    bottom: 302px;
+    left: 253.84px;
+    right: 119.98px; 
+    color: #5FE19B;
+    align-items: center;
 }
 
 .logo{
