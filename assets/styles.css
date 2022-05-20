@@ -1,6 +1,7 @@
-body{
-    height: 1494px;
-    width: 1062px;
+
+html, body{
+    height: 1062px;
+    width: 1494px;
     background: url(images/gfbg.jpg), #c4c4c4;
     background-repeat: no-repeat;
     background-attachment: fixed;
