@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Game Finder</title>
 </head>
 <body>
@@ -17,15 +17,31 @@
         <p class="loginbox__title">Welcome! Log in or register</h1>
         <br>
         <p class="loginbox__text">Log in to find the games you're looking for!</p>
-        <input class="loginbox__input--email" type="email" name="email" id="email" placeholder="Email">
+        <input class="loginbox__email" type="email" name="email" id="email" placeholder="Email">
         <br><br>
-        <input class="loginbox__input--password" type="password" name="password" id="password" placeholder="Password">
-        <input class= "loginbox__checkbox" type="checkbox" id="rememberme" name="rememberme" value="rememberme">
-        <p class="loginbox__rememberme">Remember me</p>
+        <input class="loginbox__password" type="password" name="password" id="password" placeholder="Password">
+        <input class="loginbox__checkbox" type="checkbox" id="rememberme" name="rememberme">
+        <label class="loginbox__rememberme" for="rememberme">Remember me</label>
         <a class="loginbox__forgot" href="#">Forgot password ?</a>
         <button class="loginbox__login">Log in</button>
         <p class="loginbox__registered">Not registered yet ?</p>
         <a class="loginbox__register" href="#">Register now</a>
+        <hr class="loginbox__hr1">
+        <hr class="loginbox__hr2">
+        <p class="or">or</p>
+        <button class="loginbox__social facebook">
+            <span><img class="facebookicon" src="assets/images/facebook.png" alt="facebook icon"></span>
+            <span>Log in with Facebook</span>
+        </button>
+        <button class="loginbox__social twitter">
+            <span><img class="twittericon" src="assets/images/twitter.png" alt="twitter icon"></span>
+            <span>Log in with Twitter</span>
+        </button>
+        <button class="loginbox__social google">
+            <span><img class="googleicon" src="assets/images/google.png" alt="google icon"></span>
+            <span>Log in with Google</span>
+        </button>
+        
     </form>
     
 </body>
