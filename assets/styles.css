@@ -80,6 +80,14 @@ html, body{
 
 .loginbox__checkbox:checked {
 	background-color: #5FE19B;
+    content: "assets/images/check";
+}
+
+.loginbox__checkbox:checked:after {
+    content: "\2714";
+    color:#FFFFFF;
+    position: absolute;
+    left: 2.5px;
 }
 
 .loginbox__rememberme{
