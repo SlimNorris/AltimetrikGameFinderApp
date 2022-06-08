@@ -1,20 +1,74 @@
-
-html{
+body{
     height: 1024px;
     width: 1440px;
     margin: 0;
-    padding: 0;
 }
 
-body{
-    height: 1024px;
-    max-width: 1440px;
+.carousel{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 600ms opacity ease-in-out;
+    transition-delay: 600ms;
+}
+
+/* .slide > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+
+.slide[data-active]{
+    opacity: 1;
+    z-index: 0;
+    transition-delay: 0ms;
+}
+
+.carousel-button{
+    position: absolute;
+    top: 509px;
+    z-index: 2;
+    background-blend-mode: overlay;
+    background: #515151;
+    opacity: 0.8;
+    border-radius: 50%;
+    border: none;
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.carousel-button.prev{
+    left: 32px;
+}
+
+.carousel-button.next{
+    left: 1364px;
+    transform: rotate(180deg);
+}
+
+/*  
+    Dark/Light mode switch*
+
     background: url(images/darkbg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-}
 
 body.light{
     height: 1024px;
@@ -33,11 +87,11 @@ body.light{
 
 .label{
     position: absolute;
-    top: 44.27px;
-    left: 1230px;
+    top: 60px;
+    left: 1320px;
     background-color: #5F81FB;
-    height: 83px;
-    width: 166px;
+    height: 22px;
+    width: 44px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -50,29 +104,29 @@ body.light{
 
 .on{
     color: #FFFFFF;
-    width: 38.67px;
-    height: 22.67px;
+    width: 10.25px;
+    height: 9px;
 }
 
 .off{
     color: #939393;
-    width: 53.02px;
-    height: 22.67px;
+    width: 14.05px;
+    height: 9px;
 }
 
 .ball{
     background-color: #FFFFFF;
     position: absolute;
-    width: 67.91px;
-    height: 67.91px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    left: 86.77px;
+    left: 23px;
     transition: transform 0.2s linear;
 }
 
 .checkbox1:checked + .label .ball{
-    transform: translateX(-75.45px)
-}
+    transform: translateX(-18.45px)
+} */
 
 .loginbox{
     background: rgb(0, 0, 0, 0.5);
@@ -81,26 +135,8 @@ body.light{
     height: 702px;
     width: 462px;
     top: 178px; 
-    left: 932px;
-    right: 100px;
-    bottom: 182px;
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
-    font-family: 'Exo', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: white;
-}
-
-.loginbox__light{
-    background: #F0F0F0;
-    background-blend-mode: overlay;
-    position: absolute;
-    height: 702px;
-    width: 462px;
-    top: 178px; 
-    left: 932px;
-    right: 100px;
+    left: 877px;
+    right: 101px;
     bottom: 182px;
     backdrop-filter: blur(10px);
     border-radius: 12px;
@@ -138,9 +174,10 @@ body.light{
     bottom: 520px;
     left: 50px;
     right: 50px;
-    width: 362px;
+    width: 346px;
     height: 47px;
     border-radius: 4px;
+    padding-left: 16px;
 }
 
 .loginbox__password{
@@ -149,12 +186,30 @@ body.light{
     bottom: 457px;
     left: 50px;
     right: 50px;
-    width: 362px;
+    width: 346px;
     height: 47px;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    padding-left: 16px;
+}
+
+::placeholder{
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    left: 16px;
+    top: 13.5px;
+    color: #939393;
+}
+
+.hide1{
+    position: absolute;
+    top: 218px;
+    left: 381.16px;
+    cursor: pointer;
+}
+
+.eye-slash{
+    display: none;
 }
 
 .loginbox__checkbox{
@@ -168,11 +223,11 @@ body.light{
     right: 392px;
     border: 1.5px solid #FFFFFF;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .loginbox__checkbox:checked {
 	background-color: #5FE19B;
-    content: "assets/images/check";
 }
 
 .loginbox__checkbox:checked:after {
@@ -216,6 +271,7 @@ body.light{
     align-items: center;
     font-size: 18px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .loginbox__registered{
@@ -243,7 +299,7 @@ hr{
     position: absolute;
     top: 434px;
     width: 147.44px;
-    border: 0.1px solid #FFFFFF;
+    border: 1px solid #FFFFFF;
 }
 
 .loginbox__hr1{
@@ -256,8 +312,8 @@ hr{
 
 .logo{
     position: absolute;
-    height: 37px;
-    width: 293px;
+    height: 37.46px;
+    width: 293.54px;
     left: 53.23px;
     top: 44.27px;
 }
@@ -271,6 +327,7 @@ hr{
     font-weight: 400;
     font-size: 14px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .loginbox__social{
@@ -285,6 +342,7 @@ hr{
     font-size: 18px;
     background: transparent;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .facebook{
