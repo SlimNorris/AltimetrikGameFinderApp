@@ -1,8 +1,8 @@
-/*const checkbox1 = document.getElementById('checkbox1');
+const checkbox1 = document.getElementById('checkbox1');
 checkbox1.addEventListener('change', () =>{
         //change the theme of the website
         document.body.classList.toggle('light')
-    }); */
+    }); 
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
