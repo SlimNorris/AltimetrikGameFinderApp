@@ -11,36 +11,36 @@
     <title>Game Finder</title>
 </head>
 <body>
-    <div class="carousel" data-carousel>
-        <button class="carousel-button prev" data-carousel-button="prev"><img src="assets/images/arrow.svg" alt="a simple arrow"></button>
-        <button class="carousel-button next" data-carousel-button="next"><img src="assets/images/arrow.svg" alt="a simple arrow"></button>
-        <ul data-slides>
-            <li class="slide slide--active" data-active>
-            <img src="assets/images/darkbg.png" alt="black controller" width="1440px" height="1024px">
-            </li>
-            <li class="slide">
-                <img src="assets/images/darkbg2.png" alt="black controller" width="1440px" height="1024px">
-            </li>
-            <li class="slide">
-                <img src="assets/images/darkbg3.png" alt="black controller" width="1440px" height="1024px">
-            </li>
-            <li class="slide">
-                <img src="assets/images/darkbg4.png" alt="black controller" width="1440px" height="1024px">
-            </li>
-            <li class="slide">
-                <img src="assets/images/darkbg5.png" alt="black controller" width="1440px" height="1024px">
-            </li>
-            <li class="slide">
-                <img src="assets/images/darkbg6.png" alt="black controller" width="1440px" height="1024px">
-            </li>
-        </ul>
-        <div class="carousel__nav">
-            <span class="carousel__button carousel__button--selected"></span>
-            <span class="carousel__button"></span>
-            <span class="carousel__button"></span>
-            <span class="carousel__button"></span>
-            <span class="carousel__button"></span>
-            <span class="carousel__button"></span>
+    <div class="container">
+        <div class="mySlides active">
+            <img src="assets/images/darkbg.png" alt="imagen-1">
+        </div>
+        <div class="mySlides">
+            <img src="assets/images/darkbg2.png" alt="">
+        </div>
+        <div class="mySlides">
+            <img src="assets/images/darkbg3.png" alt="">
+        </div>
+        <div class="mySlides">
+            <img src="assets/images/darkbg4.png" alt="">
+        </div>
+        <div class="mySlides">
+            <img src="assets/images/darkbg5.png" alt="">
+        </div>
+        <div class="mySlides">
+            <img src="assets/images/darkbg6.png" alt="">
+        </div>
+        
+        <button class="prev" onclick="plusSlides(-1)"></button>
+        <button class="next" onclick="plusSlides(1)"></button>
+
+        <div class="elements">
+            <span class="quadrate" onclick="currentSlide(1)"></span>
+            <span class="quadrate" onclick="currentSlide(2)"></span>
+            <span class="quadrate" onclick="currentSlide(3)"></span>
+            <span class="quadrate" onclick="currentSlide(4)"></span>
+            <span class="quadrate" onclick="currentSlide(5)"></span>
+            <span class="quadrate" onclick="currentSlide(6)"></span>
         </div>
     </div>
     <div class="content">
