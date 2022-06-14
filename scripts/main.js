@@ -28,14 +28,14 @@ function toggle(){
     if(state){
         document.getElementById("password").setAttribute("type", "password");
         document.getElementById("eye").style.display= "block";
-        document.getElementById("eye-slash").style.display= "none";
+        document.getElementById("eye--slash").style.display= "none";
         state=false;
 
     }
     else{
         document.getElementById("password").setAttribute("type", "text");
         document.getElementById("eye").style.display= "none";
-        document.getElementById("eye-slash").style.display= "block";
+        document.getElementById("eye--slash").style.display= "block";
         state=true;
     }
 }
