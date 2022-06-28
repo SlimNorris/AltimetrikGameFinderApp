@@ -1,3 +1,4 @@
+//CAROUSEL 
 let slideIndex = 1;
 showSlides(slideIndex)
 
@@ -22,7 +23,9 @@ function showSlides(n){
     slides[slideIndex-1].style.opacity = "1";
     quadrates[slideIndex-1].className += " active";
 }
+//CAROUSEL
 
+//PASSWORD EYE
 var state=false;
 function toggle(){
     if(state){
@@ -39,13 +42,15 @@ function toggle(){
         state=true;
     }
 }
+//PASSWORD EYE
 
+//LIGHT/DARK SWITCH
 // const checkbox1 = document.getElementById('checkbox1');
 // checkbox1.addEventListener('change', () =>{
 //         //change the theme of the website
 //         document.body.classList.toggle('light')
 //     }); 
-
+//LIGHT/DARK SWITCH
 
 
 // -- save json-server json-server-auth

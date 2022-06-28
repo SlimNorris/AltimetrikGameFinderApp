@@ -425,7 +425,7 @@ hr{
 /* Beginning of index styles */
 
 .header1{
-    position: sticky;
+    position: fixed;
     width: 1440px;
     height: 94px;
     top: 0px;
@@ -497,10 +497,12 @@ hr{
 }
 
 .header2{
-    position: sticky;
+    position: fixed;
     top: 94px;
+    left: 0px;
     color: #FFFFFF;
     height: 141px;
+    width: 1440px;
     padding-left: 40px;
     z-index: 3;
     background-color: #151515;
@@ -568,7 +570,7 @@ hr{
 }
 
 .lateralmenu{
-    position: sticky;
+    position: fixed;
     top: 235px;
     left: 0px;
     width: 263px;
@@ -674,11 +676,9 @@ hr{
     left: 263px;
     top: 235px;
     width: 1177px;
-    height: 1024px;
-    z-index: 0;
     display: grid;
     grid-template-columns: 363px 363px 363px;
-    grid-template-rows: 314px 314px 314px;
+    grid-template-rows: repeat(20, 314px);
     gap: 24px;
     justify-items: start;
     align-content: space-around;
@@ -766,6 +766,86 @@ hr{
     top: 272px;
     background: linear-gradient(270deg, rgba(219, 219, 219, 0.05) 0%, rgb(255, 255, 255, 1) 50%);
     border-radius: 17.5px;
+}
+
+.games__card{
+    position: relative;
+    /* height: 314px; */
+    width: 363px;
+    background: #303030;
+    opacity: 0.5;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.game__img{
+    position: absolute;
+    width: 363px;
+    height: 179px;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.game__name{
+    position: absolute;
+    width: 293px;
+    height: 21px;
+    left: 16px;
+    top: 195px;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.game__rating{
+    position: absolute;
+    width: 20px;
+    height: 15.75px;
+    left: 327px;
+    top: 202px;
+    border-radius: 22.5px;
+    color: #36B972;
+}
+
+.game__date{
+    position: absolute;
+    width: 137px;
+    height: 12.25px;
+    left: 16px;
+    top: 244px;
+    border-radius: 17.5px;
+    color: #939393;
+}
+
+.game__date2{
+    position: absolute;
+    width: 137px;
+    height: 12.25px;
+    left: 125px;
+    top: 244px;
+    border-radius: 17.5px;
+    color: #FFFFFF;
+}
+
+.game__genres{
+    position: absolute;
+    width: 137px;
+    height: 12.25px;
+    left: 16px;
+    top: 272px;
+    border-radius: 17.5px;
+    color: #939393;
+}
+
+.game__genres2{
+    position: absolute;
+    width: 222px;
+    height: 12.25px;
+    left: 125px;
+    top: 272px;
+    border-radius: 17.5px;
+    color: #FFFFFF;
 }
 
 /************** DARK/LIGHT MODE SWITCH *******************/
